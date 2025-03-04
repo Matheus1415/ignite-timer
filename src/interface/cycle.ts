@@ -22,3 +22,8 @@ export interface CycleContextType {
   createNewCycle: (data: CreateCycleData) => void;
   interuptedData: () => void;
 }
+
+export interface CycleState {
+  cycles: Cycle[];
+  currentCycleId: string | null;
+}
