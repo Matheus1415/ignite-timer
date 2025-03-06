@@ -25,14 +25,45 @@ O **Comodo** é uma aplicação web desenvolvida para auxiliar no gerenciamento 
 - **React Hook Form + Zod** para validação de formulários.
 
 ## 📸 Capturas de Tela
+![Foto da Página Inicial](https://github.com/Matheus1415/ignite-timer/blob/main/timer.png)
+![Foto da Página de historico de atividades](https://github.com/Matheus1415/ignite-timer/blob/main/history.png)
 
-Adicione imagens do projeto aqui para demonstrar a interface.
+## 📁 Estrutura do Projeto
+
+```bash
+src/
+├── @types/                   # Definições de tipos para estilização e outros.
+├── assets/                   # Imagens, ícones e outros recursos estáticos.
+├── components/               # Componentes reutilizáveis da aplicação.
+├── contexts/                 # Context API para gerenciamento global de estados.
+│   ├── CyclesContext.tsx     # Contexto para ciclos de trabalho.
+├── layouts/                  # Layouts padrões da aplicação.
+│   ├── DefaultLayout/        # Layout padrão usado nas páginas.
+│   │   ├── index.tsx         # Componente principal do layout.
+│   │   ├── styles.ts         # Estilos do layout.
+├── pages/                    # Páginas principais da aplicação.
+│   ├── Home/                 # Página inicial do app.
+│   │   ├── index.tsx         # Componente principal da Home.
+│   │   ├── styles.ts         # Estilos da Home.
+├── reducers/                 # Reducers para controle do estado da aplicação.
+│   ├── cycles/               # Reducer e actions para ciclos.
+│   │   ├── actions.ts        # Ações relacionadas aos ciclos.
+│   │   ├── reducer.ts        # Redutor para ciclos.
+├── styles/                   # Estilos globais e temas.
+│   ├── global.ts             # Estilos globais do app.
+│   ├── themes/               # Temas da aplicação.
+│   │   ├── default.ts        # Tema padrão.
+├── App.tsx                   # Componente principal da aplicação.
+├── main.tsx                  # Ponto de entrada do React.
+├── vite.config.ts 
+
+```
 
 ## 📦 Como Executar o Projeto
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/Matheus1415/ignite-timer.git
    ```
 2. Instale as dependências:
    ```bash
