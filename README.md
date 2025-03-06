@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# ⏳ Comodo - Gerenciador de Tempo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Sobre o Projeto
 
-Currently, two official plugins are available:
+O **Comodo** é uma aplicação web desenvolvida para auxiliar no gerenciamento de tempo e produtividade. Com um sistema de **timer**, permite aos usuários adicionar projetos e acompanhar suas atividades em diferentes estados, garantindo um melhor controle sobre as tarefas realizadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- **⏱ Timer para Projetos:**
+  - Adicione projetos e defina um tempo para trabalhar neles.
+  - Controle o progresso dos projetos com um **timer dinâmico**.
+- **📊 Estados dos Projetos:**
+  - **Em andamento**: Projetos que ainda estão sendo trabalhados.
+  - **Concluído**: Projetos finalizados com sucesso.
+  - **Interrompido**: Projetos pausados ou cancelados.
+- **📜 Página de Histórico:**
+  - Consulte a lista de projetos concluídos ou interrompidos.
+  - Veja detalhes sobre a duração de cada atividade e o status final.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** + **TypeScript** para a interface interativa.
+- **Styled Components** para estilização moderna.
+- **Context API** para gerenciamento de estado global.
+- **React Hook Form + Zod** para validação de formulários.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Capturas de Tela
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Adicione imagens do projeto aqui para demonstrar a interface.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📦 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o projeto:
+   ```bash
+   npm run dev
+   ```
+
+Agora o aplicativo estará rodando em `http://localhost:5173/` (ou outra porta configurada).
